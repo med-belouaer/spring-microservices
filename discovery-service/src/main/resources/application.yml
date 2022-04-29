@@ -17,10 +17,3 @@ eureka:
     serviceUrl:
       defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka
       # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
-# Jaeger config  
-opentracing:
-  jaeger:
-    http-sender:
-      url: '${JAEGER_URL:http://jaeger-collector.istio-system.svc:14268}/api/traces'
-    log-spans: true
